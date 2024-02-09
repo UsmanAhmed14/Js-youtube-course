@@ -22,3 +22,16 @@ const bigNumber = 3243525235n
 // Reference Type(Non Primitive)
 
 // Arrays, Objects, Function
+
+const heroes = ["Home Lander", "Soldier Boy", "SuperMan"] //Array
+
+let myObj = {
+    fullName : "M. Usman Ahmed",
+    age:25, 
+    } // Object, has key value pairs
+
+const myFunction = function(){
+    console.log("Hello World");
+}
+
+console.log(typeof outsideTemp);
