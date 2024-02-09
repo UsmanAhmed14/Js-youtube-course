@@ -35,3 +35,31 @@ const myFunction = function(){
 }
 
 console.log(typeof outsideTemp);
+
+
+
+
+
+
+// **************************
+// Stack(used in Primitive data types ), Heap(Non-primitive data types)
+
+let myYoutubeName = "Usman AHmed"
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+console.log(anotherName);
+console.log(myYoutubeName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
