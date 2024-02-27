@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121;color:white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        // 1. Create an element
+        const li = document.createElement('li') // holding it into a variable
+        // 2. Adding Langname
+        li.innerHTML = `${langName}`
+        // selecting, where it is to be attached 
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("python")
+    addLanguage("typescript")
+
+
+    function addOptiLanguage(langName) {
+       const li =  document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("GoLang")
+
+    // Editing values
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    // secondLang.innerHTML = "Mojo"
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+
+    // Another Edit example
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = "<li>Typescript</li>"
+
+    // remove
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
+</script>    
+
+
+</html>
